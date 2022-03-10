@@ -1,15 +1,33 @@
 # 二叉树
 
-[Book](https://leetcode-cn.com/leetbook/detail/data-structure-binary-tree/)
+[LeetCode Book](https://leetcode-cn.com/leetbook/detail/data-structure-binary-tree/)
 
-- 前序遍历 根左右
+## 定义
 
-@[code py](144二叉树的前序遍历.py)
+```py
+class TreeNode: 
+    def __init__(self, value=0, left=None, right=None):
+        self.value = value
+        self.left = left
+        self.right = right
+```
 
-- 中序遍历 左根右
-
-
-- 后序遍历 左右根
+## 递归遍历
 
 > 所谓前中后序只针对于根节点，而左右子节点永远都是先左后右的顺序。所以，前序就是：根左右！中序就是：左根右！后续就是：左右根！
 
+- 前序遍历 根左右 [LeetCode题目](https://leetcode-cn.com/problems/binary-tree-preorder-traversal/)
+
+- 中序遍历 左根右 [LeetCode题目](https://leetcode-cn.com/problems/binary-tree-inorder-traversal/)
+
+- 后序遍历 左右根 [LeetCode题目](https://leetcode-cn.com/problems/binary-tree-postorder-traversal/)
+
+@[code py](144二叉树的前序遍历.py)
+
+## 迭代遍历
+
+> 本质上是在模拟递归，因为在递归的过程中使用了系统栈，所以在迭代的解法中常用Stack来模拟系统栈。
+
+@[code py](94二叉树的中序遍历.py)
+
+## 层序遍历
