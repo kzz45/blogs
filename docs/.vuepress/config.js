@@ -15,7 +15,7 @@ module.exports = {
         smoothScroll: true,
         nextLinks: true,
         prevLinks: true,
-        nav: [{
+        navbar: [{
                 text: 'Home',
                 link: '/'
             },
