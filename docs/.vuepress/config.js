@@ -35,6 +35,10 @@ module.exports = {
                 text: '算法',
                 link: '/algorithm/'
             },
+            {
+                text: '投资',
+                link: '/money/'
+            },
         ]
     }
 }
