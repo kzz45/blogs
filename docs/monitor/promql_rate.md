@@ -30,3 +30,8 @@
 rate算法是resultValue = resultValue / ms.Range.Seconds()
 
 ![](./resultValue.png)
+
+## 参考文档
+
+[PromQL 查询之 rate 函数的使用](https://mp.weixin.qq.com/s/7z8n3abX9k39YL5kCopJqQ)
+[Understanding the Prometheus rate() function](https://www.metricfire.com/blog/understanding-the-prometheus-rate-function/)
