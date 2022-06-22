@@ -36,9 +36,13 @@ module.exports = {
                 link: '/algorithm/'
             },
             {
-                text: '投资',
-                link: '/money/'
+                text: '监控',
+                link: '/monitor/'
             },
+            // {
+            //     text: '投资',
+            //     link: '/money/'
+            // },
         ]
     }
 }
