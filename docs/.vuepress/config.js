@@ -16,16 +16,12 @@ module.exports = {
         nextLinks: true,
         prevLinks: true,
         navbar: [{
-                text: 'Home',
+                text: '首页',
                 link: '/'
             },
             {
-                text: 'Python',
-                link: '/python/'
-            },
-            {
-                text: 'Golang',
-                link: '/golang/'
+                text: '运维',
+                link: '/devops/'
             },
             {
                 text: '日报',
@@ -39,10 +35,10 @@ module.exports = {
                 text: '监控',
                 link: '/monitor/'
             },
-            // {
-            //     text: '投资',
-            //     link: '/money/'
-            // },
+            {
+                text: '基础',
+                link: '/basic/'
+            },
         ]
     }
 }
