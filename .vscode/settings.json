@@ -1,3 +1,6 @@
 {
-    "git.ignoreLimitWarning": true
+    "python.formatting.autopep8Args": [
+        "--max-line-length=180", "--ignore", "E402"
+    ],
+    "python.analysis.autoSearchPaths": true
 }

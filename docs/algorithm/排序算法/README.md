@@ -19,8 +19,8 @@
 
 @[code](./insert_sort.py)
 
-## 异或
+## 归并排序
 
-## 对数器
+![](./mergeSort.gif)
 
-> 通过大量的测试数据来验证你写的算法是否正确
+@[code](./merge_sort.py)
