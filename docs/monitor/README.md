@@ -2,6 +2,10 @@
 
 ## [监控概述](./监控概述.md)
 
-## [自研监控使用说明](./自研监控.md)
+## [自研监控](./自研监控.md)
+
+## [K8S监控](./K8S监控.md)
+
+## [Alertmanager](./alertmanager.md)
 
 ## [为啥rate()返回 no data](./promql_rate.md)
