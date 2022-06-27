@@ -7,4 +7,4 @@ git init
 git add -A
 git commit -m 'public'
 
-git push -f https://github.com/kzz45/blogs.git master
+git push -f https://github.com/kzz45/blogs.git main
