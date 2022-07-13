@@ -1,0 +1,1 @@
+const e={key:"v-7630e300",path:"/golang/",title:"Golang",lang:"en-US",frontmatter:{},excerpt:"",headers:[],git:{updatedTime:164673702e4,contributors:[{name:"kongzZ",email:"kongzz45@foxmail.com",commits:1}]},filePathRelative:"golang/README.md"};export{e as data};
