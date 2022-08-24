@@ -183,3 +183,5 @@ spec:
 ```
 
 - 重启下Prometheus就会在targets中发现有kubernetes-pods的监控任务
+
+[参考文档](https://github.com/prometheus-operator/prometheus-operator/blob/main/Documentation/additional-scrape-config.md)
