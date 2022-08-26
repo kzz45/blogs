@@ -23,10 +23,6 @@ module.exports = {
         text: "首页",
         link: "/",
       },
-      //   {
-      //     text: "运维",
-      //     link: "/devops/",
-      //   },
       {
         text: "日报",
         link: "/daily/",
@@ -43,10 +39,6 @@ module.exports = {
         text: "容器",
         link: "/container/",
       },
-      //   {
-      //     text: "基础",
-      //     link: "/basic/",
-      //   },
     ],
   },
 };
