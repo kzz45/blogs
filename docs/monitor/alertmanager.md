@@ -1,3 +1,6 @@
+---
+next: ./alertmanager配置.md
+---
 # Alertmanager告警系统
 
 > 在监控体系中，告警系统是比不可少的一块，也是复杂难搞的部分。比如你可能会有如下对话
@@ -73,37 +76,3 @@ Checking conf/global_rules.yml
 | group_wait      | Alertmanager在收到一条新的告警时，在将这条告警发送给receiver之前需要等待的时间 |
 | group_interval  | 对于一条已经出现过的告警，Alertmanager会每个多久再检查一次                     |
 | repeat_interval | 对于一条已经出现过的告警，Alertmanager会多久重新发送给receiver                 |
-
-## 告警的路由
-
-```yaml
-route:
-  group_by: ["alertname", "level", "_product_id"]
-  receiver: -1 # 没有匹配到的都发送给默认路由
-  routes:
-    - receiver: 4
-      continue: true
-      group_wait: 60s
-      group_interval: 60s
-      repeat_interval: 600s
-      match_re:
-        _product_id: 1 # 所有_product_id=1的告警都发送给 receiver=4这个接收组
-    - receiver: 7
-      continue: true
-      group_wait: 60s
-      group_interval: 60s
-      repeat_interval: 600s
-      match_re:
-        _product_id: 2 # 所有_product_id=2的告警都发送给 receiver=7这个接收组
-        
-receivers:
-  - name: -1
-    webhook_configs:
-      - url: http://127.0.0.1:5454/api/v1/notice/
-  - name: 7
-    webhook_configs:
-      - url: http://127.0.0.1:5454/api/v1/notice/
-  - name: 4
-    webhook_configs:
-      - url: http://127.0.0.1:5454/api/v1/notice/
-```

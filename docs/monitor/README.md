@@ -8,6 +8,8 @@
 
 ## [Alertmanager](./alertmanager.md)
 
+## [Alertmanager配置](./alertmanager配置.md)
+
 ## [为啥rate()返回 no data](./promql_rate.md)
 
 ## [K8S Prometheus自定义监控](./additional-scrape-configs.md)
