@@ -1,5 +1,5 @@
 ---
-prev: ./alertmanager.md
+prev: ./Alertmanager告警系统.md
 ---
 # Alertmanager配置
 

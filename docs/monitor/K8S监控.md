@@ -60,11 +60,11 @@ prometheus-k8s      2/2     13d
 
 > 由于我们的K8S集群是在阿里云上的，配置联邦直接在阿里云K8S集群里，新建svc资源即可，如图
 
-![](./aliyun-prometheus-federate.png)
+![](./asset/aliyun-prometheus-federate.png)
 
 配置结果如下图，这样我们就可以通过新建的IP去访问K8S集群内部监控了
 
-![](./aliyun-prometheus-slb.png)
+![](./asset/aliyun-prometheus-slb.png)
 
 ## Prometheus配置
 
@@ -103,7 +103,7 @@ scrape_configs:
 
 至此，我们的K8S集群基础监控就已经接入完成了，效果如图
 
-![](./k8s-dashboard.png)
+![](./asset/k8s-dashboard.png)
 
 ## 业务的监控
 
@@ -141,7 +141,7 @@ spec:
 kubectl logs prometheus-k8s-1 -n monitoring
 ```
 
-![](./prometheus-monitor-log.png)
+![](./asset/prometheus-monitor-log.png)
 
 修改ClusterRole
 
@@ -149,7 +149,7 @@ kubectl logs prometheus-k8s-1 -n monitoring
 kubectl edit clusterrole prometheus-k8s -n monitoring
 ```
 
-![](./prometheus-monitor-change.png)
+![](./asset/prometheus-monitor-change.png)
 
 至此，我们的自定义业务的监控信息也就能够读取到了
 

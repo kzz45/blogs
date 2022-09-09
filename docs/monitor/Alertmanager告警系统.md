@@ -55,7 +55,7 @@ Checking conf/global_rules.yml
 
 ## 一条告警走的路
 
-![告警走的路](./alertmanager_notification.png)
+![告警走的路](./asset/alertmanager_notification.png)
 
 ## 告警的三种状态
 

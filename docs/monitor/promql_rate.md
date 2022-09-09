@@ -25,11 +25,11 @@
 
 10分钟内的样本
 
-![](./promql_rate.png)
+![](./asset/promql_rate.png)
 
 rate算法是resultValue = resultValue / ms.Range.Seconds()
 
-![](./resultValue.png)
+![](./asset/resultValue.png)
 
 ## 参考文档
 
