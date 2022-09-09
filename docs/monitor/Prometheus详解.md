@@ -38,16 +38,8 @@ rule_files:
 
 # 抓取任务
 scrape_configs:
-  - file_sd_configs: # 文件发现模式
-      - files:
-          - instance.yml
-        refresh_interval: 50s # 刷新周期, 如果文件内容有变化, 刷新周期之后会在targe任务中体现
-    job_name: 基础监控 # target任务名称
-    scheme: http
-    metrics_path: /exporter/
-    params:
-      name: ["base"]
-    # 这个任务具体的URL体现为: http://{instance}:{instance_port}/exporter/?name=base
+  # 具体看下面我们用到的几种服务发现模式
+
 ```
 
 ## 我们用到的服务发现
@@ -55,6 +47,18 @@ scrape_configs:
 > 我们主要用到的服务发现模式有以下几种
 
 - file_sd_config 主要用来对机器实例的管理发现
+
+```yml
+- file_sd_configs:
+      - files:
+          - instance.yml
+        refresh_interval: 50s
+    job_name: 基础监控
+    scheme: http
+    metrics_path: /exporter/
+    params:
+      name: ["base"]
+```
 
 instance.yml
 
@@ -121,3 +125,5 @@ kubectl get secret prometheus-k8s -n monitoring -o json | jq -r '.data. "prometh
 ### Thanos
 
 > 主要使用样本降准，以及用来做Prometheus集群
+
+未完待续。。。
