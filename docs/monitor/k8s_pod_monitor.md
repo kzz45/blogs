@@ -86,7 +86,13 @@ spec:
   version: 2.31.1
 ```
 
-- 新增一个secret: additional-scrape-configs, 名称: prometheus-additional.yaml, 值为:
+## 新增 secret 
+
+additional-scrape-configs, 名称: prometheus-additional.yaml, 值为:
+
+```sh
+kubectl -n monitoring create secret generic  additional-configs --from-file=prometheus-additional.yaml
+```
 
 ```yaml
 - job_name: 'kubernetes-pods'
@@ -121,7 +127,7 @@ spec:
       action: replace
 ```
 
-- 再次修改Prometheus资源
+## 修改Prometheus
 
 ```yaml
 apiVersion: monitoring.coreos.com/v1
