@@ -10,9 +10,11 @@
 
 ## [我们的Alertmanager配置](./alertmanager配置.md)
 
+## [Alertmanager的几个重要参数](./Alertmanager的几个重要参数.md)
+
 ## [我们的告警通知](./alertmanager_webhook.md)
 
-## [我们的告警维护](./silence.md)
+## [Alertmanager的告警维护](./silence.md)
 
 ## [研发问为啥rate()返回了no data](./promql_rate.md)
 
