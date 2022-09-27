@@ -27,17 +27,21 @@ module.exports = {
         text: "日报",
         link: "/daily/",
       },
-      //   {
-      //     text: "算法",
-      //     link: "/algorithm/",
-      //   },
-      {
-        text: "监控",
-        link: "/monitor/",
-      },
+        {
+          text: "基础",
+          link: "/basic/",
+        },
+      // {
+      //   text: "监控",
+      //   link: "/monitor/",
+      // },
       {
         text: "容器",
         link: "/container/",
+      },
+      {
+        text: "小册",
+        link: "/book/",
       },
     ],
   },
