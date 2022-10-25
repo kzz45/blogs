@@ -24,13 +24,13 @@ module.exports = {
         link: "/",
       },
       {
-        text: "日报",
+        text: "碎碎念",
         link: "/daily/",
       },
-        {
-          text: "基础",
-          link: "/basic/",
-        },
+      {
+        text: "基础",
+        link: "/basic/",
+      },
       // {
       //   text: "监控",
       //   link: "/monitor/",
