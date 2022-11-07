@@ -29,3 +29,5 @@ sidebar: auto
 ## [标签管理](./label.md)
 
 ## [我们到底在做什么](./whatwedo.md)
+
+## [替换](./replace.md)
