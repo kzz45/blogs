@@ -18,15 +18,19 @@
 
 #### [告警任务](./prometheus/04.md)
 
+#### [管理 API](./prometheus/05.md)
+
+#### [实战](./prometheus/06.md)
+
 ### Alertmanager
 
 #### [基础](./alertmanager/01.md)
 
-#### 初体验
+#### [初体验](./alertmanager/02.md)
 
-#### 告警路由
+#### [告警路由](./alertmanager/03.md)
 
-#### 告警维护
+#### [告警维护](./alertmanager/04.md)
 
 #### 告警通知
 
