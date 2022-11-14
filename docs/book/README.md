@@ -20,19 +20,21 @@
 
 #### [管理 API](./prometheus/05.md)
 
-#### [实战](./prometheus/06.md)
+#### [模版示例](./prometheus/06.md)
 
 ### Alertmanager
 
 #### [基础](./alertmanager/01.md)
 
-#### [初体验](./alertmanager/02.md)
+#### [配置](./alertmanager/02.md)
 
-#### [告警路由](./alertmanager/03.md)
+#### [告警消息](./alertmanager/03.md)
 
 #### [告警维护](./alertmanager/04.md)
 
 #### [告警通知](./alertmanager/05.md)
+
+#### [模版示例](./alertmanager/06.md)
 
 ## 实战篇
 
