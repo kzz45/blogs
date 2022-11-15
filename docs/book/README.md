@@ -1,4 +1,4 @@
-# Prometheus 实战小册
+# Prometheus 小册
 
 > 准备从头开始写一个小册，内容就是基于 Prometheus 怎么开发一个监控系统，包括前端、后端、客户端等等
 
@@ -36,8 +36,16 @@
 
 #### [模版示例](./alertmanager/06.md)
 
-## 实战篇
+## 实践篇
 
-### [完整部署测试](./practice/01.md)
+### [完整部署实践](./practice/01.md)
+
+### [飞书告警实践](./practice/02.md)
+
+### [告警维护实践](./practice/03.md)
+
+### [K8S 监控实践](./practice/04.md)
+
+### [域名监控实践](./practice/05.md)
 
 ## 问题篇
