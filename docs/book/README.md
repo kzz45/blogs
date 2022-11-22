@@ -38,18 +38,20 @@
 
 ## 实践篇
 
-### [完整部署实践](./practice/01.md)
+### [完整部署](./practice/01.md)
 
-### [飞书告警实践](./practice/02.md)
+### [飞书告警](./practice/02.md)
 
-### [告警维护实践](./practice/03.md)
+### [告警维护](./practice/03.md)
 
-### [K8S 监控实践](./practice/04.md)
+### [K8S 监控](./practice/04.md)
 
-### [域名监控实践](./practice/05.md)
+### [域名监控](./practice/05.md)
 
 ## 问题篇
 
 ### [Alertmanager 的参数](./advance/01.md)
 
 ### [一条告警走的路](./advance/02.md)
+
+### [Grafana 显示 no data](./advance/03.md)
