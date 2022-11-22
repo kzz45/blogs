@@ -19,15 +19,3 @@
 ## [研发问为啥rate()返回了no data](./promql_rate.md)
 
 ## [K8S中业务的Pod监控](./k8s_pod_monitor.md)
-
-## [Prometheus详解](./Prometheus详解.md)
-
-## [Prometheus查询很慢怎么办](./prometheus_cache.md)
-
-## [telegraf你玩儿了吗](./telegraf.md)
-
-## [K8S集群内Ingress怎么监控](./ingress.md)
-
-## [网络和域名监控](./blackbox.md)
-
-## [阿里云的监控回调](./callback.md)

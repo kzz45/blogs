@@ -50,6 +50,6 @@
 
 ## 问题篇
 
-### [来给查询加加速](./advance/01.md)
+### [Alertmanager 的参数](./advance/01.md)
 
 ### [一条告警走的路](./advance/02.md)
