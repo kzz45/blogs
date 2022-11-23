@@ -14,10 +14,11 @@ module.exports = {
   theme: "@vuepress/theme-default",
   themeConfig: {
     sidebar: "auto",
-    // lastUpdated: "Last Updated",
     smoothScroll: true,
     nextLinks: true,
     prevLinks: true,
+    contributorsText: "贡献者",
+    lastUpdatedText: "上次更新",
     navbar: [
       {
         text: "首页",
@@ -31,10 +32,6 @@ module.exports = {
         text: "基础",
         link: "/basic/",
       },
-      // {
-      //   text: "监控",
-      //   link: "/monitor/",
-      // },
       {
         text: "容器",
         link: "/container/",

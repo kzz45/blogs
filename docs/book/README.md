@@ -48,6 +48,8 @@
 
 ### [域名监控](./practice/05.md)
 
+### [告警规则](./practice/06.md)
+
 ## 问题篇
 
 ### [Alertmanager 的参数](./advance/01.md)
