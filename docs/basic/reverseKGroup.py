@@ -3,6 +3,7 @@ class ListNode:
         self.val = val
         self.next = next
 
+
 class Solution:
     def reverseKGroup(self, head: ListNode, k: int):
         start = head
@@ -19,7 +20,7 @@ class Solution:
             if end is None:
                 return head
             self.reverse(start, end)
-            last_end.next = end 
+            last_end.next = end
             last_end = start
         return head
 

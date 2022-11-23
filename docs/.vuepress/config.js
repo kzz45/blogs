@@ -25,7 +25,7 @@ module.exports = {
         link: "/",
       },
       {
-        text: "碎碎念",
+        text: "碎念",
         link: "/daily/",
       },
       {
@@ -37,7 +37,7 @@ module.exports = {
         link: "/container/",
       },
       {
-        text: "小册",
+        text: "监控",
         link: "/book/",
       },
     ],

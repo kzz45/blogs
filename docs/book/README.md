@@ -50,6 +50,8 @@
 
 ### [告警规则](./practice/06.md)
 
+### [Alertmanager 高可用](./practice/07.md)
+
 ## 问题篇
 
 ### [Alertmanager 的参数](./advance/01.md)

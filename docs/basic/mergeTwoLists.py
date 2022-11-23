@@ -2,18 +2,20 @@ class ListNode:
     def __init__(self, val=0, next=None):
         self.val = val
         self.next = next
+
+
 class Solution:
     def mergeTwoLists(self, list1: ListNode, list2: ListNode):
         if list1 is None or list2 is None:
-            return list2  if list1 is None else list1
-        
+            return list2 if list1 is None else list1
+
         head = ListNode(0)
 
         if list1.val <= list2.val:
             head = list1
         else:
             head = list2
-        
+
         cur1 = head.next
         if head == list1:
             cur2 = list2

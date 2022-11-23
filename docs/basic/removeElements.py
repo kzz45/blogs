@@ -3,6 +3,7 @@ class ListNode:
         self.val = val
         self.next = next
 
+
 class Solution:
     def removeElements(self, head: ListNode, val: int) -> ListNode:
         dummy_head = ListNode(0, next=head)
@@ -13,4 +14,3 @@ class Solution:
             else:
                 cur = cur.next
         return dummy_head.next
-        
