@@ -1,7 +1,7 @@
-arr = [2, 3, 1, 1, 2, 3, 5, 7, 7]
+from collections import deque
 
-n = len(arr)
-tmp = arr[0]
-for i in range(1, n):
-    tmp = tmp ^ arr[i]
-print(tmp)
+root = [3, 9, 20, 15, 7]
+
+x = deque([root])
+
+print(x)
