@@ -10,9 +10,38 @@
 
 ## [链表](./02.md)
 
-死扣边界，唯手熟尔，合并、相交、反转
+![](./asset/linked_list.png)
+
+【链表 Linked List】是一种线性数据结构，插入删除高效，查询访问效率低下
+
+### 初始化
+
+```py
+# 链表结点类
+class ListNode:
+    def __init__(self, x):
+        self.val = x # 结点值
+        self.next = None # 指向下一结点的指针（引用）
+# 双向链表结点类
+class ListNode:
+    def __init__(self, x):
+        self.val = x
+        self.next = None # 指向后继结点的指针（引用）
+        self.prev = None  # 指向前驱结点的指针（引用
+```
 
 ## [数组](./03.md)
+
+![](./asset/array.png)
+
+【数组 Array】，**相同类型元素**存储在**连续内存空间**的数据结构，查询高效，数组在初始化之后长度不可变，插入删除效率低
+
+### 初始化
+
+```py
+foo = [0]*5
+bar = [0 for _ in range(100)]
+```
 
 ## [二叉树](./04.md)
 
@@ -25,5 +54,7 @@
 ## [图](./08.md)
 
 ## [动态规划](./09.md)
+
+## [剑指 offer](./10.md)
 
 ## [MySQL 之 IOPS、QPS、TPS](../interview/01.md)
