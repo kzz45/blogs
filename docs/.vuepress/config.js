@@ -40,6 +40,10 @@ module.exports = {
         text: "监控",
         link: "/book/",
       },
+      {
+        text: "笔记",
+        link: "/note/",
+      },
     ],
   },
 };
