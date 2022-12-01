@@ -9,7 +9,7 @@ module.exports = {
       },
     ],
   ],
-  title: "OMG运维管理",
+  title: "OMG运维",
   description: "达那蛋",
   theme: "@vuepress/theme-default",
   themeConfig: {
