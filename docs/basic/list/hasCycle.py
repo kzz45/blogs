@@ -18,3 +18,12 @@ class Solution:
             if slow == fast:
                 return True
         return False
+
+    def hasCycle2(self, head: ListNode) -> bool:
+        visted = set()
+        while head:
+            if head in visted:
+                return True
+            visted.add(head)
+            head = head.next
+        return False
