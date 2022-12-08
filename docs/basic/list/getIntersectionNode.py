@@ -7,4 +7,17 @@ class ListNode:
 
 class Solution:
     def getIntersectionNode(self, headA: ListNode, headB: ListNode) -> ListNode:
-        pass
+        if not headA or not headB:
+            return None
+        pa = headA
+        pb = headB
+        while pa != pb:
+            if not pa:
+                pa = headB
+            else:
+                pa = pa.next
+            if not pb:
+                pb = headA
+            else:
+                pb = pb.next
+        return pa

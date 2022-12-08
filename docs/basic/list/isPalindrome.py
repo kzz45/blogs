@@ -7,4 +7,14 @@ class ListNode:
 
 class Solution:
     def isPalindrome(self, head: ListNode) -> bool:
-        pass
+        stack = []
+        cur = head
+        while cur:
+            stack.append(cur)
+            cur = cur.next
+        while stack:
+            xxx = stack.pop()
+            if xxx.val != head.val:
+                return False
+            head = head.next
+        return True
