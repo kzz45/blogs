@@ -52,6 +52,8 @@
 
 ### [Alertmanager 高可用](./practice/07.md)
 
+### [Prometheus 基础认证](./practice/08.md)
+
 ## 问题篇
 
 ### [Alertmanager 的参数](./advance/01.md)
