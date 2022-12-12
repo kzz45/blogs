@@ -1,6 +1,10 @@
-# 笔记
+# 手记
 
-## [el-select](./01.md)
+## [下拉框 el-select 默认选中](./01.md)
+
+## [MySQL 之 IOPS、QPS、TPS](./02.md)
+
+## [Go 之 make 和 new 区别](./03.md)
 
 ## [systemd]
 
