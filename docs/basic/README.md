@@ -20,36 +20,9 @@ next: ./01.md
 
 双链表就是比单链表多了一个 prev 指针，循环链表就是就是首尾相连
 
-![](./asset/linked_list.png)
-
-初始化，或者叫链表的结点定义
-
-```py
-# 链表结点类
-class ListNode:
-    def __init__(self, x):
-        self.val = x # 结点值
-        self.next = None # 指向下一结点的指针（引用）
-# 双向链表结点类
-class ListNode:
-    def __init__(self, x):
-        self.val = x
-        self.next = None # 指向后继结点的指针（引用）
-        self.prev = None  # 指向前驱结点的指针（引用
-```
-
 ## [数组](./03.md)
 
 【数组 Array】，**相同类型元素**存储在**连续内存空间**的数据结构，查询高效，数组在初始化之后长度不可变，插入删除效率低
-
-![](./asset/array.png)
-
-初始化
-
-```py
-foo = [0]*5
-bar = [0 for _ in range(100)]
-```
 
 ## [二叉树](./04.md)
 
