@@ -5,6 +5,7 @@ class TreeNode:
         self.left = left
         self.right = right
 
+
 class Solution:
     def isValidBST(self, root: TreeNode) -> bool:
         def traversal(root: TreeNode, pre_val: float("-inf")):
