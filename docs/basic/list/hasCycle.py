@@ -5,6 +5,9 @@ class ListNode:
         self.next = None
 
 
+# 哈希表方式，遍历访问结点，并判断是否在哈希表中
+# 快慢指针方式，两个指针相遇就说明有环
+
 class Solution:
     def hasCycle(self, head: ListNode) -> bool:
         # 快慢指针初始化指向 head
