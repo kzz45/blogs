@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="generator" content="VuePress 2.0.0-beta.36">
+    <style>
+      :root {
+        --c-bg: #fff;
+      }
+      html.dark {
+        --c-bg: #22272e;
+      }
+      html, body {
+        background-color: var(--c-bg);
+      }
+    </style>
+    <script>
+      const userMode = localStorage.getItem('vuepress-color-scheme');
+			const systemDarkMode = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+			if (userMode === 'dark' || (userMode !== 'light' && systemDarkMode)) {
+				document.documentElement.classList.toggle('dark', true);
+			}
+    </script>
+    <link rel="icon" href="walle.png"><title>Prometheus 模版示例 | OMG运维</title><meta name="description" content="达那蛋">
+    <link rel="modulepreload" href="/blogs/assets/app.897a2dcd.js"><link rel="modulepreload" href="/blogs/assets/06.html.1a5509bc.js"><link rel="modulepreload" href="/blogs/assets/06.html.d3f475f7.js"><link rel="modulepreload" href="/blogs/assets/plugin-vue_export-helper.21dcd24c.js">
+    <link rel="stylesheet" href="/blogs/assets/style.ee217cae.css">
+  </head>
+  <body>
+    <div id="app"><!--[--><div class="theme-container"><!--[--><header ref_key="navbar" class="navbar"><div class="toggle-sidebar-button" title="toggle sidebar" aria-expanded="false" role="button" tabindex="0"><div class="icon" aria-hidden="true"><span></span><span></span><span></span></div></div><span><a href="/blogs/" class=""><!----><span class="site-name">OMG运维</span></a></span><div class="navbar-items-wrapper" style=""><!--[--><!--]--><nav class="navbar-items can-hide"><!--[--><div class="navbar-item"><a href="/blogs/" class="" aria-label="首页"><!--[--><!--]--> 首页 <!--[--><!--]--></a></div><div class="navbar-item"><a href="/blogs/daily/" class="" aria-label="碎念"><!--[--><!--]--> 碎念 <!--[--><!--]--></a></div><div class="navbar-item"><a href="/blogs/basic/" class="" aria-label="基础"><!--[--><!--]--> 基础 <!--[--><!--]--></a></div><div class="navbar-item"><a href="/blogs/container/" class="" aria-label="容器"><!--[--><!--]--> 容器 <!--[--><!--]--></a></div><div class="navbar-item"><a href="/blogs/book/" class="router-link-active" aria-label="监控"><!--[--><!--]--> 监控 <!--[--><!--]--></a></div><div class="navbar-item"><a href="/blogs/note/" class="" aria-label="笔记"><!--[--><!--]--> 笔记 <!--[--><!--]--></a></div><!--]--></nav><!--[--><!--]--><button class="toggle-dark-button" title="toggle dark mode"><svg style="" class="icon" focusable="false" viewBox="0 0 32 32"><path d="M16 12.005a4 4 0 1 1-4 4a4.005 4.005 0 0 1 4-4m0-2a6 6 0 1 0 6 6a6 6 0 0 0-6-6z" fill="currentColor"></path><path d="M5.394 6.813l1.414-1.415l3.506 3.506L8.9 10.318z" fill="currentColor"></path><path d="M2 15.005h5v2H2z" fill="currentColor"></path><path d="M5.394 25.197L8.9 21.691l1.414 1.415l-3.506 3.505z" fill="currentColor"></path><path d="M15 25.005h2v5h-2z" fill="currentColor"></path><path d="M21.687 23.106l1.414-1.415l3.506 3.506l-1.414 1.414z" fill="currentColor"></path><path d="M25 15.005h5v2h-5z" fill="currentColor"></path><path d="M21.687 8.904l3.506-3.506l1.414 1.415l-3.506 3.505z" fill="currentColor"></path><path d="M15 2.005h2v5h-2z" fill="currentColor"></path></svg><svg style="display:none;" class="icon" focusable="false" viewBox="0 0 32 32"><path d="M13.502 5.414a15.075 15.075 0 0 0 11.594 18.194a11.113 11.113 0 0 1-7.975 3.39c-.138 0-.278.005-.418 0a11.094 11.094 0 0 1-3.2-21.584M14.98 3a1.002 1.002 0 0 0-.175.016a13.096 13.096 0 0 0 1.825 25.981c.164.006.328 0 .49 0a13.072 13.072 0 0 0 10.703-5.555a1.01 1.01 0 0 0-.783-1.565A13.08 13.08 0 0 1 15.89 4.38A1.015 1.015 0 0 0 14.98 3z" fill="currentColor"></path></svg></button><!----></div></header><!--]--><div class="sidebar-mask"></div><!--[--><aside class="sidebar"><nav class="navbar-items"><!--[--><div class="navbar-item"><a href="/blogs/" class="" aria-label="首页"><!--[--><!--]--> 首页 <!--[--><!--]--></a></div><div class="navbar-item"><a href="/blogs/daily/" class="" aria-label="碎念"><!--[--><!--]--> 碎念 <!--[--><!--]--></a></div><div class="navbar-item"><a href="/blogs/basic/" class="" aria-label="基础"><!--[--><!--]--> 基础 <!--[--><!--]--></a></div><div class="navbar-item"><a href="/blogs/container/" class="" aria-label="容器"><!--[--><!--]--> 容器 <!--[--><!--]--></a></div><div class="navbar-item"><a href="/blogs/book/" class="router-link-active" aria-label="监控"><!--[--><!--]--> 监控 <!--[--><!--]--></a></div><div class="navbar-item"><a href="/blogs/note/" class="" aria-label="笔记"><!--[--><!--]--> 笔记 <!--[--><!--]--></a></div><!--]--></nav><!--[--><!--]--><ul class="sidebar-items"><!--[--><li><p tabindex="0" class="sidebar-item sidebar-heading">Prometheus 模版示例 <!----></p><!--[--><ul style="" class="sidebar-item-children"><!--[--><li><a aria-current="page" href="/blogs/book/prometheus/06.html#告警规则模版" class="router-link-active router-link-exact-active sidebar-item" aria-label="告警规则模版"><!--[--><!--]--> 告警规则模版 <!--[--><!--]--></a><!----></li><li><a aria-current="page" href="/blogs/book/prometheus/06.html#监控实例模版" class="router-link-active router-link-exact-active sidebar-item" aria-label="监控实例模版"><!--[--><!--]--> 监控实例模版 <!--[--><!--]--></a><!----></li><li><a aria-current="page" href="/blogs/book/prometheus/06.html#prometheus-配置文件模版" class="router-link-active router-link-exact-active sidebar-item" aria-label="Prometheus 配置文件模版"><!--[--><!--]--> Prometheus 配置文件模版 <!--[--><!--]--></a><!----></li><li><a aria-current="page" href="/blogs/book/prometheus/06.html#prometheus-的二次封装" class="router-link-active router-link-exact-active sidebar-item" aria-label="Prometheus 的二次封装"><!--[--><!--]--> Prometheus 的二次封装 <!--[--><!--]--></a><!----></li><!--]--></ul><!--]--></li><!--]--></ul><!--[--><!--]--></aside><!--]--><!--[--><main class="page"><!--[--><!--]--><div class="theme-default-content"><!--[--><h1 id="prometheus-模版示例" tabindex="-1"><a class="header-anchor" href="#prometheus-模版示例" aria-hidden="true">#</a> Prometheus 模版示例</h1><p>启动 Prometheus 主要是配置文件需要配置好，包括告警规则的配置，监控任务的配置，监控实例的配置</p><p>所以我们后端服务需要有这些接口，通过请求后端服务的接口，读取数据并渲染好 Prometheus 配置文件</p><h2 id="告警规则模版" tabindex="-1"><a class="header-anchor" href="#告警规则模版" aria-hidden="true">#</a> 告警规则模版</h2><div class="language-tpl ext-tpl line-numbers-mode"><pre class="language-tpl"><code>groups:
+  - name: {{ .AlertRuleName }}
+    rules:
+    {{- range .Rules }}
+      - alert: {{ .AlertName }}
+        expr: {{ .Expr }}
+        for: {{ .For }}
+        labels:
+          level: {{ .Labels.Level }}
+        annotations:
+          summary: {{ .Annotations.Summary }}
+          description: {{ .Annotations.Description }}
+    {{- end }}
+</code></pre><div class="line-numbers" aria-hidden="true"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br></div></div><h2 id="监控实例模版" tabindex="-1"><a class="header-anchor" href="#监控实例模版" aria-hidden="true">#</a> 监控实例模版</h2><div class="language-tpl ext-tpl line-numbers-mode"><pre class="language-tpl"><code># 实例列表(标签)
+{{- range .Instances }}
+- labels:
+    _ip: {{ .IP }}
+    _name: {{ .Name }}
+    _endpoint: {{ .Endpoint }}
+    {{- range $key, $value := .Labels }}
+    {{ $key }}: {{ $value }}
+    {{- end }}
+  targets:
+    - {{ .IP }}:{{ .Port }}
+{{- end }}
+</code></pre><div class="line-numbers" aria-hidden="true"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br></div></div><h2 id="prometheus-配置文件模版" tabindex="-1"><a class="header-anchor" href="#prometheus-配置文件模版" aria-hidden="true">#</a> Prometheus 配置文件模版</h2><div class="language-tpl ext-tpl line-numbers-mode"><pre class="language-tpl"><code># 全局配置
+global:
+  scrape_interval: {{ .GlobalScrapeInterval }}s
+  evaluation_interval: {{ .GlobalEvaluationInterval }}s
+  scrape_timeout: {{ .ScrapeTimeout }}s
+  external_labels:
+    {{- range $key, $value := .Labels }}
+    {{ $key }}: {{ $value }}
+    {{- end }}
+
+# 告警alertmanager配置
+alerting:
+  alertmanagers:
+    - static_configs:
+        - targets:
+            - {{ .AlertmanagerAddr }}
+# 告警规则文件
+rule_files:
+  - {{ .AlertRuleName }}.yml
+
+# 抓取任务配置
+scrape_configs:
+  {{- range .Tasks }}
+  - file_sd_configs:
+      - files:
+          - {{ .TaskID }}.yml
+        refresh_interval: 10s
+    job_name: {{ .Name }}
+    metrics_path: {{ .Metric }}
+    params:
+    {{- range $key, $value := .Params }}
+      {{ $key }}: {{ $value | printf &quot;%q&quot;}}
+    {{- end }}
+    scheme: {{ .Scheme }}
+    scrape_interval: {{ .Interval }}s
+    scrape_timeout: {{ .Timeout }}s
+    {{ end }}
+</code></pre><div class="line-numbers" aria-hidden="true"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br><span class="line-number">29</span><br><span class="line-number">30</span><br><span class="line-number">31</span><br><span class="line-number">32</span><br><span class="line-number">33</span><br><span class="line-number">34</span><br><span class="line-number">35</span><br><span class="line-number">36</span><br><span class="line-number">37</span><br></div></div><h2 id="prometheus-的二次封装" tabindex="-1"><a class="header-anchor" href="#prometheus-的二次封装" aria-hidden="true">#</a> Prometheus 的二次封装</h2><ul><li>程序读取后端服务接口数据，渲染配置文件</li><li>程序启动本地 Prometheus 的二进制文件服务(加上参数)</li><li>程序定时检查服务运行情况，定时读取配置文件并渲染，如果有变化执行 reload 重载</li></ul><p><img src="/blogs/assets/monitor_proxy.95cc95b0.png" alt=""></p><!--]--></div><footer class="page-meta"><!----><div class="meta-item last-updated"><span class="meta-item-label">上次更新: </span><!----></div><div class="meta-item contributors"><span class="meta-item-label">贡献者: </span><span class="meta-item-info"><!--[--><!--[--><span class="contributor" title="email: kongzz45@foxmail.com">kongzZ</span><!----><!--]--><!--]--></span></div></footer><nav class="page-nav"><p class="inner"><span class="prev"><a href="/blogs/book/prometheus/05.html" class="" aria-label="Prometheus 管理 API"><!--[--><!--]--> Prometheus 管理 API <!--[--><!--]--></a></span><span class="next"><a href="/blogs/book/alertmanager/01.html" class="" aria-label="Alertmanager 基础"><!--[--><!--]--> Alertmanager 基础 <!--[--><!--]--></a></span></p></nav><!--[--><!--]--></main><!--]--></div><!----><!--]--></div>
+    <script type="module" src="/blogs/assets/app.897a2dcd.js" defer></script>
+  </body>
+</html>

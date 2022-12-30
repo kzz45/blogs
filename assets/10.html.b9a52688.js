@@ -1,0 +1,1 @@
+const t={key:"v-7f621b5a",path:"/book/practice/10.html",title:"",lang:"en-US",frontmatter:{},excerpt:"",headers:[],git:{updatedTime:1668422097e3,contributors:[{name:"kongzZ",email:"kongzz45@foxmail.com",commits:1}]},filePathRelative:"book/practice/10.md"};export{t as data};

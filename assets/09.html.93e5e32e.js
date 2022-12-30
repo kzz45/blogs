@@ -1,0 +1,1 @@
+const e={key:"v-ca7756ae",path:"/book/practice/09.html",title:"Prometheus \u4E4B remote read \u548C write",lang:"en-US",frontmatter:{prev:"./08.md",next:"./10.md"},excerpt:"",headers:[],git:{updatedTime:1670582525e3,contributors:[{name:"kongzZ",email:"kongzz45@foxmail.com",commits:1}]},filePathRelative:"book/practice/09.md"};export{e as data};

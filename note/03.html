@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="generator" content="VuePress 2.0.0-beta.36">
+    <style>
+      :root {
+        --c-bg: #fff;
+      }
+      html.dark {
+        --c-bg: #22272e;
+      }
+      html, body {
+        background-color: var(--c-bg);
+      }
+    </style>
+    <script>
+      const userMode = localStorage.getItem('vuepress-color-scheme');
+			const systemDarkMode = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+			if (userMode === 'dark' || (userMode !== 'light' && systemDarkMode)) {
+				document.documentElement.classList.toggle('dark', true);
+			}
+    </script>
+    <link rel="icon" href="walle.png"><title>Go make 和 new 区别 | OMG运维</title><meta name="description" content="达那蛋">
+    <link rel="modulepreload" href="/blogs/assets/app.897a2dcd.js"><link rel="modulepreload" href="/blogs/assets/03.html.43433a8c.js"><link rel="modulepreload" href="/blogs/assets/03.html.60bc4a60.js"><link rel="modulepreload" href="/blogs/assets/plugin-vue_export-helper.21dcd24c.js">
+    <link rel="stylesheet" href="/blogs/assets/style.ee217cae.css">
+  </head>
+  <body>
+    <div id="app"><!--[--><div class="theme-container"><!--[--><header ref_key="navbar" class="navbar"><div class="toggle-sidebar-button" title="toggle sidebar" aria-expanded="false" role="button" tabindex="0"><div class="icon" aria-hidden="true"><span></span><span></span><span></span></div></div><span><a href="/blogs/" class=""><!----><span class="site-name">OMG运维</span></a></span><div class="navbar-items-wrapper" style=""><!--[--><!--]--><nav class="navbar-items can-hide"><!--[--><div class="navbar-item"><a href="/blogs/" class="" aria-label="首页"><!--[--><!--]--> 首页 <!--[--><!--]--></a></div><div class="navbar-item"><a href="/blogs/daily/" class="" aria-label="碎念"><!--[--><!--]--> 碎念 <!--[--><!--]--></a></div><div class="navbar-item"><a href="/blogs/basic/" class="" aria-label="基础"><!--[--><!--]--> 基础 <!--[--><!--]--></a></div><div class="navbar-item"><a href="/blogs/container/" class="" aria-label="容器"><!--[--><!--]--> 容器 <!--[--><!--]--></a></div><div class="navbar-item"><a href="/blogs/book/" class="" aria-label="监控"><!--[--><!--]--> 监控 <!--[--><!--]--></a></div><div class="navbar-item"><a href="/blogs/note/" class="router-link-active" aria-label="笔记"><!--[--><!--]--> 笔记 <!--[--><!--]--></a></div><!--]--></nav><!--[--><!--]--><button class="toggle-dark-button" title="toggle dark mode"><svg style="" class="icon" focusable="false" viewBox="0 0 32 32"><path d="M16 12.005a4 4 0 1 1-4 4a4.005 4.005 0 0 1 4-4m0-2a6 6 0 1 0 6 6a6 6 0 0 0-6-6z" fill="currentColor"></path><path d="M5.394 6.813l1.414-1.415l3.506 3.506L8.9 10.318z" fill="currentColor"></path><path d="M2 15.005h5v2H2z" fill="currentColor"></path><path d="M5.394 25.197L8.9 21.691l1.414 1.415l-3.506 3.505z" fill="currentColor"></path><path d="M15 25.005h2v5h-2z" fill="currentColor"></path><path d="M21.687 23.106l1.414-1.415l3.506 3.506l-1.414 1.414z" fill="currentColor"></path><path d="M25 15.005h5v2h-5z" fill="currentColor"></path><path d="M21.687 8.904l3.506-3.506l1.414 1.415l-3.506 3.505z" fill="currentColor"></path><path d="M15 2.005h2v5h-2z" fill="currentColor"></path></svg><svg style="display:none;" class="icon" focusable="false" viewBox="0 0 32 32"><path d="M13.502 5.414a15.075 15.075 0 0 0 11.594 18.194a11.113 11.113 0 0 1-7.975 3.39c-.138 0-.278.005-.418 0a11.094 11.094 0 0 1-3.2-21.584M14.98 3a1.002 1.002 0 0 0-.175.016a13.096 13.096 0 0 0 1.825 25.981c.164.006.328 0 .49 0a13.072 13.072 0 0 0 10.703-5.555a1.01 1.01 0 0 0-.783-1.565A13.08 13.08 0 0 1 15.89 4.38A1.015 1.015 0 0 0 14.98 3z" fill="currentColor"></path></svg></button><!----></div></header><!--]--><div class="sidebar-mask"></div><!--[--><aside class="sidebar"><nav class="navbar-items"><!--[--><div class="navbar-item"><a href="/blogs/" class="" aria-label="首页"><!--[--><!--]--> 首页 <!--[--><!--]--></a></div><div class="navbar-item"><a href="/blogs/daily/" class="" aria-label="碎念"><!--[--><!--]--> 碎念 <!--[--><!--]--></a></div><div class="navbar-item"><a href="/blogs/basic/" class="" aria-label="基础"><!--[--><!--]--> 基础 <!--[--><!--]--></a></div><div class="navbar-item"><a href="/blogs/container/" class="" aria-label="容器"><!--[--><!--]--> 容器 <!--[--><!--]--></a></div><div class="navbar-item"><a href="/blogs/book/" class="" aria-label="监控"><!--[--><!--]--> 监控 <!--[--><!--]--></a></div><div class="navbar-item"><a href="/blogs/note/" class="router-link-active" aria-label="笔记"><!--[--><!--]--> 笔记 <!--[--><!--]--></a></div><!--]--></nav><!--[--><!--]--><ul class="sidebar-items"><!--[--><li><p tabindex="0" class="sidebar-item sidebar-heading">Go make 和 new 区别 <!----></p><!----></li><!--]--></ul><!--[--><!--]--></aside><!--]--><!--[--><main class="page"><!--[--><!--]--><div class="theme-default-content"><!--[--><h1 id="go-make-和-new-区别" tabindex="-1"><a class="header-anchor" href="#go-make-和-new-区别" aria-hidden="true">#</a> Go make 和 new 区别</h1><p>简单来说，new 只是分配了内存，make 是用于 slice，map，channel 的初始化</p><p>代码过程中很少需要使用 new，基本都是用的 make</p><p>在用 string、int 等类型，使用的时候都是直接赋值使用的</p><div class="language-go ext-go line-numbers-mode"><pre class="language-go"><code><span class="token keyword">package</span> main
+
+<span class="token keyword">import</span> <span class="token string">&quot;fmt&quot;</span>
+
+<span class="token keyword">func</span> <span class="token function">main</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+	<span class="token keyword">var</span> s1 <span class="token operator">*</span><span class="token builtin">string</span>
+	fmt<span class="token punctuation">.</span><span class="token function">Println</span><span class="token punctuation">(</span>s1<span class="token punctuation">)</span>
+	s1 <span class="token operator">=</span> <span class="token function">new</span><span class="token punctuation">(</span><span class="token builtin">string</span><span class="token punctuation">)</span> <span class="token comment">// 分配内存</span>
+	<span class="token operator">*</span>s1 <span class="token operator">=</span> <span class="token string">&quot;s1&quot;</span>
+	fmt<span class="token punctuation">.</span><span class="token function">Println</span><span class="token punctuation">(</span><span class="token operator">*</span>s1<span class="token punctuation">)</span>
+
+	m1 <span class="token operator">:=</span> <span class="token function">new</span><span class="token punctuation">(</span><span class="token keyword">map</span><span class="token punctuation">[</span><span class="token builtin">string</span><span class="token punctuation">]</span><span class="token builtin">string</span><span class="token punctuation">)</span> <span class="token comment">// 分配内存</span>
+	fmt<span class="token punctuation">.</span><span class="token function">Println</span><span class="token punctuation">(</span>m1<span class="token punctuation">)</span>
+
+	m1 <span class="token operator">=</span> <span class="token operator">&amp;</span><span class="token keyword">map</span><span class="token punctuation">[</span><span class="token builtin">string</span><span class="token punctuation">]</span><span class="token builtin">string</span><span class="token punctuation">{</span><span class="token string">&quot;m1&quot;</span><span class="token punctuation">:</span> <span class="token string">&quot;m1&quot;</span><span class="token punctuation">}</span>
+	fmt<span class="token punctuation">.</span><span class="token function">Println</span><span class="token punctuation">(</span>m1<span class="token punctuation">)</span>
+
+	m2 <span class="token operator">:=</span> <span class="token function">make</span><span class="token punctuation">(</span><span class="token keyword">map</span><span class="token punctuation">[</span><span class="token builtin">string</span><span class="token punctuation">]</span><span class="token builtin">string</span><span class="token punctuation">)</span>
+	m2<span class="token punctuation">[</span><span class="token string">&quot;m1&quot;</span><span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token string">&quot;m1&quot;</span>
+	fmt<span class="token punctuation">.</span><span class="token function">Println</span><span class="token punctuation">(</span>m2<span class="token punctuation">)</span>
+<span class="token punctuation">}</span>
+
+</code></pre><div class="line-numbers" aria-hidden="true"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br></div></div><p>new(T) 返回的是 T 的指针</p><div class="language-go ext-go line-numbers-mode"><pre class="language-go"><code><span class="token comment">// The new built-in function allocates memory. The first argument is a type,</span>
+<span class="token comment">// not a value, and the value returned is a pointer to a newly</span>
+<span class="token comment">// allocated zero value of that type.</span>
+<span class="token keyword">func</span> <span class="token function">new</span><span class="token punctuation">(</span>Type<span class="token punctuation">)</span> <span class="token operator">*</span>Type
+</code></pre><div class="line-numbers" aria-hidden="true"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br></div></div><p>make 只能用于 slice，map，channel</p><div class="language-go ext-go line-numbers-mode"><pre class="language-go"><code><span class="token comment">// The make built-in function allocates and initializes an object of type</span>
+<span class="token comment">// slice, map, or chan (only). Like new, the first argument is a type, not a</span>
+<span class="token comment">// value. Unlike new, make&#39;s return type is the same as the type of its</span>
+<span class="token comment">// argument, not a pointer to it. The specification of the result depends on</span>
+<span class="token comment">// the type:</span>
+<span class="token comment">//</span>
+<span class="token comment">//	Slice: The size specifies the length. The capacity of the slice is</span>
+<span class="token comment">//	equal to its length. A second integer argument may be provided to</span>
+<span class="token comment">//	specify a different capacity; it must be no smaller than the</span>
+<span class="token comment">//	length. For example, make([]int, 0, 10) allocates an underlying array</span>
+<span class="token comment">//	of size 10 and returns a slice of length 0 and capacity 10 that is</span>
+<span class="token comment">//	backed by this underlying array.</span>
+<span class="token comment">//	Map: An empty map is allocated with enough space to hold the</span>
+<span class="token comment">//	specified number of elements. The size may be omitted, in which case</span>
+<span class="token comment">//	a small starting size is allocated.</span>
+<span class="token comment">//	Channel: The channel&#39;s buffer is initialized with the specified</span>
+<span class="token comment">//	buffer capacity. If zero, or the size is omitted, the channel is</span>
+<span class="token comment">//	unbuffered.</span>
+<span class="token keyword">func</span> <span class="token function">make</span><span class="token punctuation">(</span>t Type<span class="token punctuation">,</span> size <span class="token operator">...</span>IntegerType<span class="token punctuation">)</span> Type
+</code></pre><div class="line-numbers" aria-hidden="true"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br></div></div><!--]--></div><footer class="page-meta"><!----><div class="meta-item last-updated"><span class="meta-item-label">上次更新: </span><!----></div><div class="meta-item contributors"><span class="meta-item-label">贡献者: </span><span class="meta-item-info"><!--[--><!--[--><span class="contributor" title="email: kongzz45@foxmail.com">kongzZ</span><!----><!--]--><!--]--></span></div></footer><nav class="page-nav"><p class="inner"><span class="prev"><a href="/blogs/note/02.html" class="" aria-label="MySQL 之 IOPS、QPS、TPS"><!--[--><!--]--> MySQL 之 IOPS、QPS、TPS <!--[--><!--]--></a></span><!----></p></nav><!--[--><!--]--></main><!--]--></div><!----><!--]--></div>
+    <script type="module" src="/blogs/assets/app.897a2dcd.js" defer></script>
+  </body>
+</html>

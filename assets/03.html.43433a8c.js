@@ -1,0 +1,1 @@
+const e={key:"v-ee6cb5dc",path:"/note/03.html",title:"Go make \u548C new \u533A\u522B",lang:"en-US",frontmatter:{prev:"./02.md"},excerpt:"",headers:[],git:{updatedTime:1670842981e3,contributors:[{name:"kongzZ",email:"kongzz45@foxmail.com",commits:1}]},filePathRelative:"note/03.md"};export{e as data};

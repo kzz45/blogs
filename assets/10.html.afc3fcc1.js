@@ -1,0 +1,1 @@
+import{o as e,a as t,b as o,e as s}from"./app.897a2dcd.js";import{_ as a}from"./plugin-vue_export-helper.21dcd24c.js";const r={},c={id:"k8s-\u5B66\u4E60",tabindex:"-1"},_=o("a",{class:"header-anchor",href:"#k8s-\u5B66\u4E60","aria-hidden":"true"},"#",-1),n=s(" K8S \u5B66\u4E60"),d=[_,n];function i(h,f){return e(),t("h1",c,d)}var p=a(r,[["render",i]]);export{p as default};

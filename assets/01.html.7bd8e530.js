@@ -1,0 +1,1 @@
+const e={key:"v-163e4f84",path:"/book/advance/01.html",title:"Alertmanager \u7684\u51E0\u4E2A\u91CD\u8981\u53C2\u6570",lang:"en-US",frontmatter:{next:"./02.md"},excerpt:"",headers:[],git:{updatedTime:166911176e4,contributors:[{name:"kongzZ",email:"kongzz45@foxmail.com",commits:2}]},filePathRelative:"book/advance/01.md"};export{e as data};
